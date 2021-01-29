@@ -16,13 +16,13 @@ Pizza.prototype.finalPrice = function() {
 $(document).ready(function() {
   const choices = ['Pepperoni', 'Mushrooms', 'Onions', 'Sausage', 'Bacon', 'Extra Cheese', 'Olives', 'Pineapple'];
   choices.forEach(function(choice) {
+    $('.toppings').append(
+      `<div class="form-check">
+      <input class="form-check-input" type="checkbox" name="choice" value="${choice}">
+      <label class="form-check-label" for="${choice}">${choice}</label>
+      </div>`);
     $('#next').click(function(event1) {
       event1.preventDefault();
-      $('.toppings').append(
-        `<div class="form-check">
-        <input class="form-check-input" type="checkbox" name="choice" value="${choice}">
-        <label class="form-check-label" for="${choice}">${choice}</label>
-        </div>`);
       $('#tops, .btn-primary').show();
       $('.first').hide();
     });
@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
     let pizza = new Pizza(size, toppings);
     const price = pizza.finalPrice();
-    console.log(price);
+    $('#price').text(price)
     let form = $('form[0]')
     $('.first').show();
     $('form')[0].reset();
