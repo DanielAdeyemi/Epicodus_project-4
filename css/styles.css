@@ -2,7 +2,7 @@
   display: inline-block;
 }
 
-#tops, .btn-primary {
+#tops, .btn-primary, #price, .btn-light {
   display: none;
 }
 
@@ -33,5 +33,7 @@
 
 .card {
   display: block;
-  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
