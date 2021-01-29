@@ -32,12 +32,13 @@ $(document).ready(function() {
     event1.preventDefault();
     const size = $('input:radio[name=size]:checked').val();
     let toppings = [];
-    $('input:checkbox[name=choice].checked').each(function() {
+    $('input:checkbox[name=choice]:checked').each(function() {
       let topping = $(this).val();
       toppings.push(topping);
     });
     let pizza = new Pizza(size, toppings);
     const price = pizza.finalPrice();
     console.log(price);
+    $('form')[0].reset();
   });
 });
