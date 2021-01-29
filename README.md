@@ -17,20 +17,20 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 **Formula: `finalPrice = base price($7) +2$ for each size up + 1$ for each topping`
 #### Test 1:
 **Test:** *display current price and selection*   
-**Expect:** *pizza.finalPrice(small,[cheese, pepperoni]).✅ toEqual(small, cheese, pepperoni, $7)*
+**Expect:** *pizza.finalPrice('small',['cheese', ''pepperoni']).✅ toEqual('small', 'cheese', 'pepperoni', $7)*
 #### Test 2:   
 **Test:** *adjust price depending on size*   
-**Expect:** *pizza.finalPrice(small).toEqual($7)*   ✅  
-**Expect:** *pizza.finalPrice(medium).toEqual($9)*  ✅   
+**Expect:** *pizza.finalPrice('small').toEqual($7)*   ✅  
+**Expect:** *pizza.finalPrice('medium').toEqual($9)*  ✅   
 **Expect:** *pizza.finalPrice(large).toEqual($11)*   ✅  
 #### Test 3:   
 **Test:** *adjust price with one topping*   
-**Expect:** *pizza.finalPrice(medium , cheese).toEqual($10)*   
+**Expect:** *pizza.finalPrice('medium' , 'cheese').toEqual($10)*✅    
 #### Test 4:   
 **Test:** *adjust price with multiple toppings*   
-**Expect:** *pizza.finalPrice(medium, [cheese, pepperoni]).toEqual($11)*   
-**Expect:** *pizza.finalPrice(medium, [cheese, pepperoni, BBQ Chicken]).toEqual($12)*    
-**Expect:** *pizza.finalPrice(large, [cheese, pepperoni, BBQ Chicken]).toEqual($14)*    
+**Expect:** *pizza.finalPrice('medium', ['cheese', 'pepperoni']).toEqual($11)*✅   
+**Expect:** *pizza.finalPrice('medium', ['cheese', 'pepperoni', 'BBQ Chicken']).toEqual($12)* ✅   
+**Expect:** *pizza.finalPrice(large, ['cheese', 'pepperoni', 'BBQ Chicken']).toEqual($14)*✅    
 
 ## *Setup instructions:*
 #### From the web:

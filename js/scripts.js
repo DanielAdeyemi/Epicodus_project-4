@@ -12,14 +12,10 @@ Pizza.prototype.finalPrice = function(size, toppings) {
   } else if (size === 'large') {
     size = 4;
   } else size = 0; // {} were omiited intentionally - we can do it if statement has only 1 line of code
-  if (toppings.length > 0) topping = 1;
-  // topping = 0;
-  // toppings.forEach(function() {
-  //   topping += 1;
-  // })
+  const topping = toppings.length;
   this.price += (size + topping);
   return this.price;
 }
 
-let price = pizza.finalPrice('medium', ['cheese']);
+let price = pizza.finalPrice('small', ['cheese', 'pepperoni', 'BBQ Chicken']);
 console.log(price);
