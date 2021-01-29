@@ -20,9 +20,9 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 **Expect:** *pizza.finalPrice(small,[cheese, pepperoni]).toEqual(small, cheese, pepperoni, $7)*
 #### Test 2:   
 **Test:** *adjust price depending on size*   
-**Expect:** *pizza.finalPrice(small).toEqual($7)*    
-**Expect:** *pizza.finalPrice(medium).toEqual($9)*    
-**Expect:** *pizza.finalPrice(large).toEqual($11)*    
+**Expect:** *pizza.finalPrice(small).toEqual($7)*   ✅  
+**Expect:** *pizza.finalPrice(medium).toEqual($9)*  ✅   
+**Expect:** *pizza.finalPrice(large).toEqual($11)*   ✅  
 #### Test 3:   
 **Test:** *adjust price with one topping*   
 **Expect:** *pizza.finalPrice(medium , cheese).toEqual($10)*   
