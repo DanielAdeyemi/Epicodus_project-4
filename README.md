@@ -1,28 +1,36 @@
 ## Pizza Parlor
-#### *Epicodus Practice lesson #-- (Week --) on -/--/2021*
+#### *Epicodus Project #4  on 1/29/2021*
 ***By Daniel Adeyemi***
 ___
-### *This project is not in a complete or portfolio ready state, and should not be considered as representation of professional work.*
----
+
 ## *Description:*
-### *{Some concise description}* 
-This web page will ...
+### *Tired from not knowing how much your pizza will cost you? Time to try this app and forget about uncertainty* 
+This web page will give you choice of pizza's sizes and toppings and displays price based on those choices. This project is concluding my forth week at [Epicodus](https://www.epicodus.com) and focus on building constractors for objects and methods for prototypes.
+
+## *Whiteboarding of bussiness logic*
+![img](img/whiteboard.png)
 
 ## *Tests*
+**Describe: `constractor Pizza(size, [toppings]) {size, toppings[array], price(base price = $7)}`**      
  
-**Describe: `function()`**   
+**Describe: `Pizza.prototype.finalPrice = function(size, [toppings])`**   
+**Formula: `finalPrice = base price($7) +2$ for each size up + 1$ for each topping`
 #### Test 1:
-**Test:** *...*   
-**Expect:** *function(???).toEqual(???)* 
+**Test:** *display current price and selection*   
+**Expect:** *pizza.finalPrice(small,[cheese, pepperoni]).toEqual(small, cheese, pepperoni, $7)* ✅
 #### Test 2:   
-**Test:** *...*   
-**Expect:** *function(???).toEqual(???)* 
+**Test:** *adjust price depending on size*   
+**Expect:** *pizza.finalPrice(small).toEqual($7)*    
+**Expect:** *pizza.finalPrice(medium).toEqual($9)*    
+**Expect:** *pizza.finalPrice(large).toEqual($11)*    
 #### Test 3:   
-**Test:** *...*   
-**Expect:** *function(???).toEqual(e)*   
+**Test:** *adjust price with one topping*   
+**Expect:** *pizza.finalPrice(medium , cheese).toEqual($10)*   
 #### Test 4:   
-**Test:** *...*   
-**Expect:** *function(???).toEqual(???)* 
+**Test:** *adjust price with multiple toppings*   
+**Expect:** *pizza.finalPrice(medium, [cheese, pepperoni]).toEqual($11)*   
+**Expect:** *pizza.finalPrice(medium, [cheese, pepperoni, BBQ Chicken]).toEqual($12)*    
+**Expect:** *pizza.finalPrice(large, [cheese, pepperoni, BBQ Chicken]).toEqual($14)*    
 
 ## *Setup instructions:*
 #### From the web:
