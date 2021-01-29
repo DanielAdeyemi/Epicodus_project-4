@@ -12,3 +12,26 @@
   display: block;
   width: 70%;
 }
+
+.output {
+  color: red;
+}
+
+.toppings label {
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(41, 39, 39);
+}
+
+.toppings .form-check {
+  margin: auto auto 10px 10px;
+}
+
+.toppings input {
+  margin-left: 25px;
+}
+
+.card {
+  display: block;
+  margin-bottom: 15px;
+}
