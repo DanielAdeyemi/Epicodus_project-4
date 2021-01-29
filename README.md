@@ -12,7 +12,7 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 
 ## *Tests*
 **Describe: `constractor Pizza(size, [toppings]) {size, toppings[array], price(base price = $7)}`**  ✅    
- 
+![img](img/test-prototype.png) 
 **Describe: `Pizza.prototype.finalPrice = function(size, [toppings])`**   
 **Formula: `finalPrice = base price($7) +2$ for each size up + 1$ for each topping`
 #### Test 1:
