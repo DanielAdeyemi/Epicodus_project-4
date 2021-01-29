@@ -2,7 +2,13 @@
   display: inline-block;
 }
 
-
-/* .toppings, .btn {
+#tops, .btn-primary {
   display: none;
-} */
+}
+
+.btn-success {
+  text-align: center;
+  margin: 5px auto 10px auto;
+  display: block;
+  width: 70%;
+}
