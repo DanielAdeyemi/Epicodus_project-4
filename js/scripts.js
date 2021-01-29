@@ -14,20 +14,21 @@ Pizza.prototype.finalPrice = function() {
   return this.price;
 }
 
-let pizza = new Pizza('large', ['cheese', 'pepperoni']);
-let price = pizza.finalPrice();
-console.log(price);
+// let pizza = new Pizza('large', ['cheese', 'pepperoni']);
+// let price = pizza.finalPrice();
+// console.log(price);
 
-// $(document).ready(function() {
-//   $('form').submit(function(event1) {
-//     event1.preventDefault();
-//     const size = $('#size');
-//     let toppings = [];
-//     $('input:checkbox[name=choice].checked').each(function() {
-//       let topping = $(this).val();
-//       toppings.push(topping);
-//     });
-//     let pizza = new Pizza(size, toppings);
-//     let price = pizza.finalPrice(size, toppings);
-//   });
-// })
+$(document).ready(function() {
+  $('form').submit(function(event1) {
+    event1.preventDefault();
+    const size = $('input:radio[name=size].checked').val();
+    let toppings = [];
+    $('input:checkbox[name=choice].checked').each(function() {
+      let topping = $(this).val();
+      toppings.push(topping);
+    });
+    let pizza = new Pizza(size, toppings);
+    const price = pizza.finalPrice();
+    console.log(price);
+  });
+})
