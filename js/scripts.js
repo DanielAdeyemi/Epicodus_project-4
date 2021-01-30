@@ -16,7 +16,7 @@ Pizza.prototype.finalPrice = function() {
 $(document).ready(function() {
   const choices = ['Pepperoni', 'Mushrooms', 'Onions', 'Sausage', 'Bacon', 'Extra Cheese', 'Olives', 'Pineapple'];
   choices.forEach(function(choice) {
-    $('.toppings').append(
+    $('.toppings .card-text').append(
       `<div class="form-check">
       <input class="form-check-input" type="checkbox" name="choice" value="${choice}">
       <label class="form-check-label" for="${choice}">${choice}</label>
