@@ -17,6 +17,7 @@
   <header></header>
   <main>
     <div class="container">
+      <h2>Check before you pay!</h2>
       <form>
         <div class="row">
           <div class="col-md-12">
@@ -46,7 +47,8 @@
             <div class="card border-secondary mb-3 h-100 toppings" style="width: 18rem;" id="tops">
               <img src="img/toppings.jpg" class="card-img-top" alt="pizza toppings">
               <div class="card-body">
-                <h5 class="card-title">Also you can pick additional toppings(just for +$1/each)</h5>
+                <h5 class="card-title">Also you can pick additional toppings</h5>
+                <p class="secondary">(just for $1 each)</p>
                 <div class="card-text"></div>
                 <button type="button submit" class="btn btn-primary">Check price</button>
               </div>
@@ -54,9 +56,11 @@
           </div>
         </div>
       </form>
-      <div class="col-md-6">
-        <div id="price"> You haven't make your choice yet! </div>
-        <button type="button" class="btn btn-light">Try again</button>
+      <div class="col-md-12">
+        <div class="alert alert-success" role="alert">
+          <p id="price"></p>
+          <button type="button" class="btn btn-light">Try again</button>
+        </div>
       </div>
     </div>
   </main>

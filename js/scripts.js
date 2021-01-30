@@ -33,7 +33,7 @@ $(document).ready(function() {
     let toppings = [];
     $('input:checkbox[name=choice]:checked').each(function() {
       let topping = $(this).val();
-      toppings.push(topping);
+      toppings.push(` ${topping}`);
     });
 
     let pizza = new Pizza(size, toppings);
@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('#price').html(`Your choice is <span class="output">${size}</span> pizza with <span class="output">${toppings}</span> as additional ingridient(s). Cost: $${price}.`);
     else $('#price').text(`Your choice is ${size} pizza with no additional ingridients. Cost: $${price}.`);
     $('#tops, .btn-primary').hide();
-    $('.btn-light, #price').show();
+    $('.alert').show();
     $('.btn-light').click(function(event3) {
       event3.preventDefault();
       $('form')[0].reset();

@@ -1,15 +1,25 @@
+h2 {
+  margin: 20px auto 20px auto;
+  font-size: 40px;
+  font-weight: bold;
+  color: purple;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .card {
   display: inline-block;
 }
 
-#tops, .btn-primary, #price, .btn-light {
+#tops, .alert {
   display: none;
 }
 
-.btn-success {
+.btn-success, .btn-primary {
   text-align: center;
-  margin: 5px auto 10px auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   width: 70%;
 }
 
@@ -36,4 +46,22 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.card-title, .secondary, .alert, h2 {
+  text-align: center;
+}
+
+.btn-light:hover {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  box-shadow: 5px 5px black;
+}
+
+.btn-light:active {
+  bottom: 2px;
+  right: 2px;
+  box-shadow: 2px 2px whitesmoke;
+  outline: none;
 }
