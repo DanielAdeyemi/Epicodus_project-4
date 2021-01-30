@@ -5,7 +5,7 @@ ___
 
 ## *Description:*
 ### *Tired from not knowing how much your pizza will cost you? Time to try this app and forget about uncertainty* 
-This web page will give you choice of pizza's sizes and toppings and displays price based on those choices. This project is concluding my forth week at [Epicodus](https://www.epicodus.com) and focus on building constractors for objects and methods for prototypes.
+This web page will give you choice of pizza's sizes and toppings and displays price based on those choices. This project is concluding my fourth week at [Epicodus](https://www.epicodus.com) and focus on building constractors for objects and methods for prototypes.
 
 ## *Whiteboarding of bussiness logic*
 ![img](img/whiteboard.png)
@@ -17,7 +17,7 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 **Formula: `finalPrice = base price($7) +2$ for each size up + 1$ for each topping`
 #### Test 1:
 **Test:** *display current price and selection*   
-**Expect:** *pizza.finalPrice('small',['cheese', ''pepperoni']).✅ toEqual('small', 'cheese', 'pepperoni', $7)*
+**Expect:** *pizza.finalPrice('small',['cheese', ''pepperoni']).toEqual('small', 'cheese', 'pepperoni', $7)* ✅
 #### Test 2:   
 **Test:** *adjust price depending on size*   
 **Expect:** *pizza.finalPrice('small').toEqual($7)*   ✅  
@@ -34,17 +34,17 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 
 ## *Setup instructions:*
 #### From the web:
-* Go to my GitHub repository, using following [URL](#).
-* Click the "Code" and click the 'Download zip' option.
+* Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Epicodus_project-4.git).
+* Click the "Code" ![img](img/code.png) and click the 'Download zip' option ![img](img/zip.png).
 * Unzip the file, navigate to the root directory.
 * open ***'index.html'*** file with your web browser.
 #### From the terminal: 
-* Clone my repository from GitHub using `git clone #`
+* Clone my repository from GitHub using  `git clone https://github.com/DanielAdeyemi/Epicodus_project-4.git`
 * Navigate to the downloaded folder using ***cd*** command
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
 *Note: please, make sure that you are inside project directory!*
 #### GitHub pages:
-*GitHub page is unavailable for this project*
+*Click [this link](https://danieladeyemi.github.io/Epicodus_project-4/) to open GitHub page*
 
 ## *Tecnologies used:*
 * HTML
@@ -55,7 +55,7 @@ This web page will give you choice of pizza's sizes and toppings and displays pr
 * Git and GitHub
 
 ## *Known bugs:*
-This project has almost no style and was used only for practice purporse.
+This project has very basic style and created as demonstration of my inderstanding how to work with objects, constractors and prototypes.
 
 ## *License and copyright:*
 

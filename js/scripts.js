@@ -39,15 +39,15 @@ $(document).ready(function() {
     let pizza = new Pizza(size, toppings);
     const price = pizza.finalPrice();
     if (pizza.toppings.length !== 0)
-      $('#price').html(`Your choice is <span class="output">${size}</span> pizza with <span class="output">${toppings}</span> as additional ingridient(s). Cost: $${price}.`);
-    else $('#price').text(`Your choice is ${size} pizza with no additional ingridients. Cost: $${price}.`);
+      $('#price').html(`Your choice is <span class="output">${size} size</span> pizza with <span class="output">${toppings}</span> as additional ingridient(s). Cost: $${price}.`);
+    else $('#price').text(`Your choice is ${size} size pizza with no additional ingridients. Cost: $${price}.`);
     $('#tops, .btn-primary').hide();
     $('.alert').show();
     $('.btn-light').click(function(event3) {
       event3.preventDefault();
       $('form')[0].reset();
       $('.first').show();
-      $('.btn-light, #price').hide();
+      $('.alert').hide();
 
     })
   });
